@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class g
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String str= sc.nextLine();
+        String []strarr = str.split(" ");
+        String ret="";
+        
+        for(int i=0;i<strarr.length;i++)
+        {
+            String word = strarr[i];
+            for(int j=0;j<word.length();j++)
+            {
+                if(j==0)
+                {
+                    ret = ret + Character.toUpperCase(word.charAt(j));
+                }
+                else
+                {
+                    ret = ret + word.charAt(j);
+                }
+                
+            }
+            
+            ret = ret + " ";
+        }
+        System.out.println(ret);
+        
+    }
+}
